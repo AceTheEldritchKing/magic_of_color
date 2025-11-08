@@ -1,0 +1,13 @@
+{
+  "itemGroup.magic_of_color": "Example Mod Tab",
+  "block.magic_of_color.example_block": "Example Block",
+  "item.magic_of_color.example_item": "Example Item",
+
+  "magic_of_color.configuration.title": "Magic of Color Configs",
+  "magic_of_color.configuration.section.magic_of_color.common.toml": "Magic of Color Configs",
+  "magic_of_color.configuration.section.magic_of_color.common.toml.title": "Magic of Color Configs",
+  "magic_of_color.configuration.items": "Item List",
+  "magic_of_color.configuration.logDirtBlock": "Log Dirt Block",
+  "magic_of_color.configuration.magicNumberIntroduction": "Magic Number Text",
+  "magic_of_color.configuration.magicNumber": "Magic Number"
+}
