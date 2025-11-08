@@ -1,6 +1,8 @@
 package net.acetheeldritchking.magic_of_color.events;
 
 import net.acetheeldritchking.magic_of_color.utils.Config;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,9 +34,9 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(MagicofColor.MODID)
+@Mod(MagicofColor.MOD_ID)
 public class MagicofColor {
-    public static final String MODID = "magic_of_color";
+    public static final String MOD_ID = "magic_of_color";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public MagicofColor(IEventBus modEventBus, ModContainer modContainer) {
@@ -53,5 +55,10 @@ public class MagicofColor {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    public static ResourceLocation id(@NotNull String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(MagicofColor.MOD_ID, path);
     }
 }
