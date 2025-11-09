@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "magic_of_color:item/bedrock_wizard_hat"
+    }
+}

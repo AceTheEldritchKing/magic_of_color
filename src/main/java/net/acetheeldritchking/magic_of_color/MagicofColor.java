@@ -3,45 +3,55 @@ package net.acetheeldritchking.magic_of_color;
 import io.redspace.ironsspellbooks.item.SpellBook;
 import io.redspace.ironsspellbooks.render.SpellBookCurioRenderer;
 import mod.azure.azurelib.common.render.armor.AzArmorRendererRegistry;
-import mod.azure.azurelib.common.render.item.AzItemRendererRegistry;
 import net.acetheeldritchking.aces_spell_utils.entity.render.items.SheathCurioRenderer;
 import net.acetheeldritchking.aces_spell_utils.items.curios.SheathCurioItem;
 import net.acetheeldritchking.magic_of_color.entity.render.armor.BedrockWarlockArmorRenderer;
-import net.acetheeldritchking.magic_of_color.events.MagicofColor;
+import net.acetheeldritchking.magic_of_color.entity.render.armor.BedrockWarlockHelmetArmorRenderer;
+import net.acetheeldritchking.magic_of_color.entity.render.armor.BedrockWarlockHoodArmorRenderer;
+import net.acetheeldritchking.magic_of_color.items.armor.MOCArmorMaterialRegistry;
 import net.acetheeldritchking.magic_of_color.registries.ItemRegistries;
 import net.acetheeldritchking.magic_of_color.registries.MOCCreativeTabRegistry;
-import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+
+import com.mojang.logging.LogUtils;
+
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
-import static net.acetheeldritchking.magic_of_color.events.MagicofColor.MOD_ID;
+// The value here should match an entry in the META-INF/neoforge.mods.toml file
+@Mod(MagicofColor.MOD_ID)
+public class MagicofColor {
+    public static final String MOD_ID = "magic_of_color";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-// This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = MOD_ID, dist = Dist.CLIENT)
-// You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
-public class MagicofColorClient {
-    public MagicofColorClient(IEventBus modEventBus, ModContainer container) {
-        // Allows NeoForge to create a config screen for this mod's configs.
-        // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
-        // Do not forget to add translations for your config options to the en_us.json file.
-        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+    public MagicofColor(IEventBus modEventBus, ModContainer modContainer) {
+        // Register the commonSetup method for modloading
+        modEventBus.addListener(this::commonSetup);
 
-        NeoForge.EVENT_BUS.register(this);
+        //NeoForge.EVENT_BUS.register(this);
 
         // Creative Tab
         MOCCreativeTabRegistry.register(modEventBus);
         // Items
         ItemRegistries.register(modEventBus);
+        // Armor Materials
+        MOCArmorMaterialRegistry.register(modEventBus);
+    }
+
+    private void commonSetup(FMLCommonSetupEvent event) {
+        // Some common setup code
     }
 
     @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
@@ -62,6 +72,20 @@ public class MagicofColorClient {
                     ItemRegistries.BEDROCK_WARLOCK_ROBES.get(),
                     ItemRegistries.BEDROCK_WARLOCK_LEGGINGS.get(),
                     ItemRegistries.BEDROCK_WARLOCK_GREAVES.get());
+            AzArmorRendererRegistry.register(BedrockWarlockHoodArmorRenderer::new, ItemRegistries.BEDROCK_WARLOCK_HOOD.get());
+            AzArmorRendererRegistry.register(BedrockWarlockHelmetArmorRenderer::new, ItemRegistries.BEDROCK_WARLOCK_HELMET.get());
         }
+    }
+
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    /*@SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
+        // Do something when the server starts
+        LOGGER.info("HELLO from server starting");
+    }*/
+
+    public static ResourceLocation id(@NotNull String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(MagicofColor.MOD_ID, path);
     }
 }

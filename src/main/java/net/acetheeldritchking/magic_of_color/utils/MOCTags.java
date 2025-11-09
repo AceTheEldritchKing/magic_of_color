@@ -1,6 +1,6 @@
 package net.acetheeldritchking.magic_of_color.utils;
 
-import net.acetheeldritchking.magic_of_color.events.MagicofColor;
+import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;

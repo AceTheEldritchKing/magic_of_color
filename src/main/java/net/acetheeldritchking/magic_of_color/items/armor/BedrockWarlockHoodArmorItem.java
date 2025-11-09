@@ -4,16 +4,14 @@ import earth.terrarium.pastel.api.item.Preenchanted;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.acetheeldritchking.aces_spell_utils.registries.ASAttributeRegistry;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 import java.util.Map;
 
-public class BedrockWarlockArmorItem extends ImbuableMOCArmorItem implements Preenchanted {
-    public BedrockWarlockArmorItem(ArmorItem.Type slot, Item.Properties settings) {
-        super(MOCArmorMaterialRegistry.BEDROCK_WARLOCK, slot, settings, schoolAttributesWithResistance(AttributeRegistry.ELDRITCH_SPELL_POWER, ASAttributeRegistry.SPELL_RES_PENETRATION, 150, 0.15F, 0.05F, 0.05F));
+public class BedrockWarlockHoodArmorItem extends ImbuableMOCArmorItem implements Preenchanted {
+    public BedrockWarlockHoodArmorItem(Type slot, Properties settings) {
+        super(MOCArmorMaterialRegistry.BEDROCK_WARLOCK, slot, settings, schoolAttributesWithResistance(AttributeRegistry.ELDRITCH_SPELL_POWER, ASAttributeRegistry.MANA_STEAL, 150, 0.15F, 0.05F, 0.05F));
     }
 
     public boolean isEnchantable(ItemStack stack) {

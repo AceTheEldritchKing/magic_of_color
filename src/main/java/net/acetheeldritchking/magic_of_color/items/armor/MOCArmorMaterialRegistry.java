@@ -2,7 +2,7 @@ package net.acetheeldritchking.magic_of_color.items.armor;
 
 import earth.terrarium.pastel.PastelCommon;
 import earth.terrarium.pastel.registries.PastelItems;
-import net.acetheeldritchking.magic_of_color.events.MagicofColor;
+import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;

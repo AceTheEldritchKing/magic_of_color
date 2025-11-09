@@ -1,7 +1,7 @@
 package net.acetheeldritchking.magic_of_color.registries;
 
 import earth.terrarium.pastel.registries.PastelItems;
-import net.acetheeldritchking.magic_of_color.events.MagicofColor;
+import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,6 +27,8 @@ public class MOCCreativeTabRegistry {
                         // Staves
                         // Armor
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HAT.get());
+                        output.accept(ItemRegistries.BEDROCK_WARLOCK_HOOD.get());
+                        output.accept(ItemRegistries.BEDROCK_WARLOCK_HELMET.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_ROBES.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_LEGGINGS.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_GREAVES.get());

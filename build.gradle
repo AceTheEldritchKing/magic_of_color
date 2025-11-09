@@ -190,10 +190,11 @@ dependencies {
     localRuntime "curse.maven:cloth-config-348521:5729127"
 
     // JEI ********************************************************************************************************
-    compileOnly "mezz.jei:jei-${jei_mc_version}-common-api:${jei_version}"
-    compileOnly "mezz.jei:jei-${jei_mc_version}-neoforge-api:${jei_version}"
-    runtimeOnly "mezz.jei:jei-${jei_mc_version}-neoforge:${jei_version}"
+    //compileOnly "mezz.jei:jei-${jei_mc_version}-common-api:${jei_version}"
+    //compileOnly "mezz.jei:jei-${jei_mc_version}-neoforge-api:${jei_version}"
+    //runtimeOnly "mezz.jei:jei-${jei_mc_version}-neoforge:${jei_version}"
     //localRuntime "curse.maven:just-enough-effect-descriptions-jeed-532286:4599099")
+    implementation "curse.maven:jei-238222:6614392"
 
     // CURIOS *****************************************************************************************************
     implementation "curse.maven:curios-309927:6274154"

@@ -1,13 +1,10 @@
 {
-  "itemGroup.magic_of_color": "Example Mod Tab",
-  "block.magic_of_color.example_block": "Example Block",
-  "item.magic_of_color.example_item": "Example Item",
+    "creative_tab.magic_of_color.items": "Magic of Color",
 
-  "magic_of_color.configuration.title": "Magic of Color Configs",
-  "magic_of_color.configuration.section.magic_of_color.common.toml": "Magic of Color Configs",
-  "magic_of_color.configuration.section.magic_of_color.common.toml.title": "Magic of Color Configs",
-  "magic_of_color.configuration.items": "Item List",
-  "magic_of_color.configuration.logDirtBlock": "Log Dirt Block",
-  "magic_of_color.configuration.magicNumberIntroduction": "Magic Number Text",
-  "magic_of_color.configuration.magicNumber": "Magic Number"
+    "item.magic_of_color.bedrock_warlock_hat": "Bedrock Warlock Hat",
+    "item.magic_of_color.bedrock_warlock_hood": "Bedrock Warlock Hood",
+    "item.magic_of_color.bedrock_warlock_helmet": "Bedrock Warlock Helmet",
+    "item.magic_of_color.bedrock_warlock_robes": "Bedrock Warlock Cuirass",
+    "item.magic_of_color.bedrock_warlock_leggings": "Bedrock Warlock Leggings",
+    "item.magic_of_color.bedrock_warlock_greaves": "Bedrock Warlock Greaves"
 }

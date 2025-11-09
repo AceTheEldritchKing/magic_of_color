@@ -12,6 +12,10 @@
 			},
 			"bones": [
 				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0]
+				},
+				{
 					"name": "bipedHead",
 					"pivot": [0, 24, 0]
 				},
@@ -225,7 +229,7 @@
 				{
 					"name": "armorLeftLowerCloakLayer",
 					"parent": "bipedBody",
-					"pivot": [0, 24, 0],
+					"pivot": [0.4675, 11.7527, 0],
 					"cubes": [
 						{
 							"origin": [1, 5, -2],
@@ -247,7 +251,7 @@
 				{
 					"name": "armorRightLowerCloakLayer",
 					"parent": "bipedBody",
-					"pivot": [0, 24, 0],
+					"pivot": [-0.4675, 11.7527, 0],
 					"cubes": [
 						{
 							"origin": [-4, 5, -2],
