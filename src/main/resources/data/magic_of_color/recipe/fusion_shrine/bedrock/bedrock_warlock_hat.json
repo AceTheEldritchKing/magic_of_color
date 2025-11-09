@@ -8,11 +8,10 @@
   },
   "copy_components": true,
   "ingredients": [
+    "irons_spellbooks:wizard_helmet",
     {
-      "item": "irons_spellbooks:wizard_leggings",
-      "components": {
-        "irons_spellbooks:clothing_variant": "hat"
-      }
+      "item": "irons_spellbooks:magic_cloth",
+      "count": 4
     },
     {
       "item": "pastel:bedrock_dust",

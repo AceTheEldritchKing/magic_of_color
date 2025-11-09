@@ -10,6 +10,10 @@
   "ingredients": [
     "irons_spellbooks:wizard_helmet",
     {
+      "item": "irons_spellbooks:magic_cloth",
+      "count": 2
+    },
+    {
       "item": "pastel:bedrock_dust",
       "count": 5
     },

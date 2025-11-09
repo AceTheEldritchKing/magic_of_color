@@ -8,9 +8,9 @@
   },
   "copy_components": true,
   "ingredients": [
-    "minecraft:golden_boots",
+    "irons_spellbooks:wizard_boots",
     {
-      "item": "irons_spellbooks:wizard_helmet",
+      "item": "pastel:bedrock_dust",
       "count": 4
     },
     {
