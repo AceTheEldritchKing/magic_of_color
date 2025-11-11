@@ -5,6 +5,7 @@ import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockArmorItem;
 import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockHelmetArmorItem;
 import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockHoodArmorItem;
+import net.acetheeldritchking.magic_of_color.items.staffs.InquisitorsGauntletStaff;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -25,6 +26,7 @@ public class ItemRegistries {
     /***
      * Staffs
      */
+    public static final DeferredHolder<Item, Item> INQUISITORS_GAUNTLET = ITEMS.register("inquisitors_gauntlet", InquisitorsGauntletStaff::new);
 
     /***
      * Armor
@@ -42,7 +44,7 @@ public class ItemRegistries {
     // Gilded Magician's Hood
     // Gilded Magician's Mask
 
-    public static Collection<DeferredHolder<Item, ? extends Item>> getDTEItems()
+    public static Collection<DeferredHolder<Item, ? extends Item>> getMOCItems()
     {
         return ITEMS.getEntries();
     }

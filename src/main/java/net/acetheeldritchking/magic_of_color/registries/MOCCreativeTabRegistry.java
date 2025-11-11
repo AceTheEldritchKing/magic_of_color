@@ -25,6 +25,7 @@ public class MOCCreativeTabRegistry {
                         // Spellbooks
                         // Weapons
                         // Staves
+                        output.accept(ItemRegistries.INQUISITORS_GAUNTLET.get());
                         // Armor
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HAT.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HOOD.get());
