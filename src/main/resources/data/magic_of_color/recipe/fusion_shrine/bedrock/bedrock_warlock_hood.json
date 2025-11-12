@@ -27,7 +27,7 @@
     }
   ],
   "result": {
-    "id": "magic_of_color:bedrock_warlock_helmet",
+    "id": "magic_of_color:bedrock_warlock_hood",
     "components": {
       "enchantments": {
         "minecraft:projectile_protection": 5
