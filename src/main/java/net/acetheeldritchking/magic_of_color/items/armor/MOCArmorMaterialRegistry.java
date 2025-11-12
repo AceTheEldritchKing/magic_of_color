@@ -2,6 +2,7 @@ package net.acetheeldritchking.magic_of_color.items.armor;
 
 import earth.terrarium.pastel.PastelCommon;
 import earth.terrarium.pastel.registries.PastelItems;
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
@@ -31,6 +32,15 @@ public class MOCArmorMaterialRegistry {
             PastelCommon.CONFIG.BedrockArmorToughness,
             PastelCommon.CONFIG.BedrockArmorKnockbackResistance);
 
+    // Gilded Wizard Hats
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> GILDED_HATS = register("gilded_hats",
+            baseArmorMap(),
+            25,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ItemRegistry.MAGIC_CLOTH.get()),
+            0,
+            0);
+
 
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(
             String name,
@@ -54,6 +64,11 @@ public class MOCArmorMaterialRegistry {
             typeIntegerEnumMap.put(ArmorItem.Type.LEGGINGS, leggings);
             typeIntegerEnumMap.put(ArmorItem.Type.BOOTS, boots);
         });
+    }
+
+    public static EnumMap<ArmorItem.Type, Integer> baseArmorMap()
+    {
+        return makeArmorMap(3, 8, 6, 3);
     }
 
     public static EnumMap<ArmorItem.Type, Integer> warlockArmorMap()

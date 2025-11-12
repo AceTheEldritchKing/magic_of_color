@@ -40,8 +40,6 @@ public class MagicofColor {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        //NeoForge.EVENT_BUS.register(this);
-
         // Creative Tab
         MOCCreativeTabRegistry.register(modEventBus);
         // Items

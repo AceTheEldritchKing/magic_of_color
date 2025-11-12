@@ -8,29 +8,33 @@
   },
   "copy_components": true,
   "ingredients": [
-    "magic_of_color:gilded_magicians_hood",
+    "pastel:fanciful_gloves",
     {
       "item": "pastel:bedrock_dust",
-      "count": 5
+      "count": 4
     },
     {
       "item": "pastel:black_pigment",
-      "count": 5
+      "count": 4
     },
     {
       "item": "pastel:onyx_powder",
-      "count": 5
+      "count": 4
     },
     {
       "item": "pastel:stratine_fragments",
       "count": 2
+    },
+    {
+      "item": "irons_spellbooks:mithril_ingot",
+      "count": 1
     }
   ],
   "result": {
-    "id": "magic_of_color:bedrock_warlock_helmet",
+    "id": "magic_of_color:inquisitors_gauntlet",
     "components": {
       "enchantments": {
-        "minecraft:projectile_protection": 5
+        "minecraft:knockback": 4
       }
     }
   },

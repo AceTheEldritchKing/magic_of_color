@@ -8,11 +8,7 @@
   },
   "copy_components": true,
   "ingredients": [
-    "irons_spellbooks:wizard_helmet",
-    {
-      "item": "irons_spellbooks:magic_cloth",
-      "count": 4
-    },
+    "magic_of_color:gilded_magicians_hat",
     {
       "item": "pastel:bedrock_dust",
       "count": 5

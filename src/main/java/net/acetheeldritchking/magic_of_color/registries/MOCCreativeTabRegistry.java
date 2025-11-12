@@ -27,6 +27,11 @@ public class MOCCreativeTabRegistry {
                         // Staves
                         output.accept(ItemRegistries.INQUISITORS_GAUNTLET.get());
                         // Armor
+                        // Gilded Magician
+                        output.accept(ItemRegistries.GILDED_MAGICIANS_HAT.get());
+                        output.accept(ItemRegistries.GILDED_MAGICIANS_HOOD.get());
+                        output.accept(ItemRegistries.GILDED_MAGICIANS_MASK.get());
+                        // Bedrock sets
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HAT.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HOOD.get());
                         output.accept(ItemRegistries.BEDROCK_WARLOCK_HELMET.get());

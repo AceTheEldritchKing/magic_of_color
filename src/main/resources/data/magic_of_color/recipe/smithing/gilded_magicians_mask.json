@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "item": "minecraft:gold_ingot"
+    },
+    "base": {
+        "item": "irons_spellbooks:wizard_helmet"
+    },
+    "result": {
+        "count": 1,
+        "id": "magic_of_color:gilded_magicians_mask"
+    },
+    "template": {
+        "item": "irons_spellbooks:magic_cloth"
+    }
+}

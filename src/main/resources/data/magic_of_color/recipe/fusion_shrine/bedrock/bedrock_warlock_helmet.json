@@ -8,10 +8,10 @@
   },
   "copy_components": true,
   "ingredients": [
-    "irons_spellbooks:wizard_helmet",
+    "magic_of_color:gilded_magicians_mask",
     {
       "item": "pastel:bedrock_dust",
-      "count": 7
+      "count": 5
     },
     {
       "item": "pastel:black_pigment",

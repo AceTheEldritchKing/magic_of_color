@@ -2,9 +2,7 @@ package net.acetheeldritchking.magic_of_color.registries;
 
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.acetheeldritchking.magic_of_color.MagicofColor;
-import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockArmorItem;
-import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockHelmetArmorItem;
-import net.acetheeldritchking.magic_of_color.items.armor.BedrockWarlockHoodArmorItem;
+import net.acetheeldritchking.magic_of_color.items.armor.*;
 import net.acetheeldritchking.magic_of_color.items.staffs.InquisitorsGauntletStaff;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ArmorItem;
@@ -41,8 +39,11 @@ public class ItemRegistries {
 
     // Gilded Magician's armors
     // Gilded Magician's Hat
+    public static final DeferredHolder<Item, Item> GILDED_MAGICIANS_HAT = ITEMS.register("gilded_magicians_hat", () -> new GildedHatItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.HELMET.getDurability(12))));
     // Gilded Magician's Hood
+    public static final DeferredHolder<Item, Item> GILDED_MAGICIANS_HOOD = ITEMS.register("gilded_magicians_hood", () -> new GildedHoodItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.HELMET.getDurability(12))));
     // Gilded Magician's Mask
+    public static final DeferredHolder<Item, Item> GILDED_MAGICIANS_MASK = ITEMS.register("gilded_magicians_mask", () -> new GildedMaskItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.HELMET.getDurability(12))));
 
     public static Collection<DeferredHolder<Item, ? extends Item>> getMOCItems()
     {
