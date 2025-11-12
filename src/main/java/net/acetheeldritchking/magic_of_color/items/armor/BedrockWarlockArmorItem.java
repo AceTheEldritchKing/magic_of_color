@@ -12,6 +12,7 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import java.util.Map;
 
 public class BedrockWarlockArmorItem extends ImbuableMOCArmorItem implements Preenchanted {
+    // Will eventually have both variegated and eldritch SP
     public BedrockWarlockArmorItem(ArmorItem.Type slot, Item.Properties settings) {
         super(MOCArmorMaterialRegistry.BEDROCK_WARLOCK, slot, settings, schoolAttributesWithResistance(AttributeRegistry.ELDRITCH_SPELL_POWER, ASAttributeRegistry.SPELL_RES_PENETRATION, 150, 0.15F, 0.05F, 0.05F));
     }
