@@ -5,6 +5,7 @@ import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.acetheeldritchking.aces_spell_utils.items.staves.ImbueableStaffItem;
+import net.acetheeldritchking.aces_spell_utils.utils.ASRarities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -17,11 +18,11 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import java.util.List;
 import java.util.Map;
 
-public class InquisitorsGauntletStaff extends ImbueableStaffItem implements Preenchanted {
+public class PraetorsGauntletStaff extends ImbueableStaffItem implements Preenchanted {
     public static final int COOLDOWN = 5 * 20;
 
-    public InquisitorsGauntletStaff() {
-        super(ItemPropertiesHelper.equipment(1).fireResistant().rarity(Rarity.EPIC).attributes(ExtendedSwordItem.createAttributes(MOCStaffTier.INQUISITORS_GAUNTLET)));
+    public PraetorsGauntletStaff() {
+        super(ItemPropertiesHelper.equipment(1).fireResistant().rarity(ASRarities.VERDANT_RARITY_PROXY.getValue()).attributes(ExtendedSwordItem.createAttributes(MOCStaffTier.PRAETORS_GAUNTLET)));
     }
 
     @Override

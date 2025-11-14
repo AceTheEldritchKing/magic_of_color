@@ -4,6 +4,7 @@ import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.acetheeldritchking.magic_of_color.items.armor.*;
 import net.acetheeldritchking.magic_of_color.items.staffs.InquisitorsGauntletStaff;
+import net.acetheeldritchking.magic_of_color.items.staffs.PraetorsGauntletStaff;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -24,7 +25,11 @@ public class ItemRegistries {
     /***
      * Staffs
      */
+    // Inquisitor's Gauntlet
     public static final DeferredHolder<Item, Item> INQUISITORS_GAUNTLET = ITEMS.register("inquisitors_gauntlet", InquisitorsGauntletStaff::new);
+
+    // Praetor's Gauntlet
+    public static final DeferredHolder<Item, Item> PRAETORS_GAUNTLET = ITEMS.register("praetors_gauntlet", PraetorsGauntletStaff::new);
 
     /***
      * Armor

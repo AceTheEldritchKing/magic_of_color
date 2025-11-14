@@ -26,6 +26,7 @@ public class MOCCreativeTabRegistry {
                         // Weapons
                         // Staves
                         output.accept(ItemRegistries.INQUISITORS_GAUNTLET.get());
+                        output.accept(ItemRegistries.PRAETORS_GAUNTLET.get());
                         // Armor
                         // Gilded Magician
                         output.accept(ItemRegistries.GILDED_MAGICIANS_HAT.get());

@@ -15,6 +15,14 @@ public class MOCStaffTier implements IronsWeaponTier {
             new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
 
+    // Praetor's Gauntlet
+    public static MOCStaffTier PRAETORS_GAUNTLET = new MOCStaffTier(15.5F, -3,
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.2f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(AttributeRegistry.MANA_REGEN, 0.1f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.25f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.3D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
+
     float damage;
     float speed;
     AttributeContainer[] attributeContainers;
