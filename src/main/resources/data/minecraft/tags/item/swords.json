@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "magic_of_color:inquisitors_gauntlet"
+    "magic_of_color:inquisitors_gauntlet",
+    "magic_of_color:praetors_gauntlet"
   ]
 }
