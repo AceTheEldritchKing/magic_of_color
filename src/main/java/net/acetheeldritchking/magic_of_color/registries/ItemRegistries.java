@@ -1,11 +1,16 @@
 package net.acetheeldritchking.magic_of_color.registries;
 
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
+import io.redspace.ironsspellbooks.item.SpellBook;
+import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
+import net.acetheeldritchking.aces_spell_utils.utils.ASRarities;
 import net.acetheeldritchking.magic_of_color.MagicofColor;
 import net.acetheeldritchking.magic_of_color.items.armor.*;
 import net.acetheeldritchking.magic_of_color.items.staffs.InquisitorsGauntletStaff;
 import net.acetheeldritchking.magic_of_color.items.staffs.PraetorsGauntletStaff;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.Unbreakable;
@@ -21,6 +26,17 @@ public class ItemRegistries {
     /***
      * Spellbooks
      */
+    // Grimoire of Color v1
+    public static final DeferredHolder<Item, Item> GRIMOIRE_OF_COLOR  = ITEMS.register("bedrock_book", () ->
+            new SpellBook(13, ItemPropertiesHelper.equipment().rarity(ASRarities.COSMIC_RARITY_PROXY.getValue()).fireResistant().stacksTo(1))
+                    .withSpellbookAttributes
+                            (
+                                    new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, .05F, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                    new AttributeContainer(AttributeRegistry.SPELL_POWER, .10F, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                    new AttributeContainer(AttributeRegistry.CAST_TIME_REDUCTION, .15F, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                    new AttributeContainer(AttributeRegistry.MAX_MANA, 300, AttributeModifier.Operation.ADD_VALUE)
+                            )
+    );
 
     /***
      * Staffs

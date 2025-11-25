@@ -16,13 +16,14 @@ public class MOCCreativeTabRegistry {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MagicofColor.MOD_ID);
 
     public static final Supplier<CreativeModeTab> MOC_ITEMS_TAB = CREATIVE_MODE_TAB.register("moc_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(PastelItems.BEDROCK_DUST.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ItemRegistries.GRIMOIRE_OF_COLOR.get()))
                     .title(Component.translatable("creative_tab.magic_of_color.items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Materials
                         // Curios
                         // Treasure
                         // Spellbooks
+                        output.accept(ItemRegistries.GRIMOIRE_OF_COLOR.get());
                         // Weapons
                         // Staves
                         output.accept(ItemRegistries.INQUISITORS_GAUNTLET.get());

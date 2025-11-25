@@ -8,19 +8,19 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 public class MOCStaffTier implements IronsWeaponTier {
     // Inquisitor's Gauntlet
-    public static MOCStaffTier INQUISITORS_GAUNTLET = new MOCStaffTier(10.5F, -3,
-            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.15f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+    public static MOCStaffTier INQUISITORS_GAUNTLET = new MOCStaffTier(9.5F, -3,
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.10f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
             new AttributeContainer(AttributeRegistry.MANA_REGEN, 0.05f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.25f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.15f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.10D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
 
     // Praetor's Gauntlet
-    public static MOCStaffTier PRAETORS_GAUNTLET = new MOCStaffTier(15.5F, -3,
-            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.2f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+    public static MOCStaffTier PRAETORS_GAUNTLET = new MOCStaffTier(14.5F, -3.1F,
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.15f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
             new AttributeContainer(AttributeRegistry.MANA_REGEN, 0.1f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.25f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-            new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.3D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.20f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(ASAttributeRegistry.SPELL_RES_PENETRATION, 0.15D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
 
     float damage;

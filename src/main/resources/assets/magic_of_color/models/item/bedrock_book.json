@@ -1,0 +1,19 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "neoforge:separate_transforms",
+    "base": {
+        "parent": "magic_of_color:item/bedrock_book_model"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "magic_of_color:item/bedrock_book_gui"
+        },
+        "head": {
+            "textures": {
+                "book": "magic_of_color:item/spellbook/bedrock_book_open",
+                "particle": "magic_of_color:item/spellbook/bedrock_book_open"
+            },
+            "parent": "irons_spellbooks:item/template_spell_book_model_open"
+        }
+    }
+}

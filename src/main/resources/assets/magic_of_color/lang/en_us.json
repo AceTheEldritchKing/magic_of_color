@@ -1,11 +1,12 @@
 {
     "creative_tab.magic_of_color.items": "Magic of Color",
 
-    "item.magic_of_color.more_details": "Press Shift for more details",
+    "item.magic_of_color.more_details": "Press [SHIFT] for more details",
     "item.magic_of_color.inquisitors_gauntlet": "Inquisitor's Gauntlet",
     "item.magic_of_color.inquisitors_gauntlet.desc": "On hit, knock entities back and deal damage to surrounding entities",
     "item.magic_of_color.praetors_gauntlet": "Praetor's Gauntlet",
     "item.magic_of_color.praetors_gauntlet.desc": "On hit, knock entities back further and deal increased damage to surrounding entities",
+    "item.magic_of_color.bedrock_book": "Grimoire of Color, vol.I",
 
     "item.magic_of_color.gilded_magicians_hat": "Gilded Magician's Hat",
     "item.magic_of_color.gilded_magicians_hood": "Gilded Magician's Hood",
